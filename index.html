@@ -1,0 +1,847 @@
+<!-- Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/ -->
+
+<!-- Este site foi desenvolvido pelo GAPE PIXEL 
+como objeto de estudo, foi um redesign
+de um site do W3layouts.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jornada Tecnológica</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- arquivos css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/carousel.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/countdown.css"> 
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/lsb.css" rel="stylesheet" type="text/css">
+
+<!-- arquivos js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<script src="js/jquery.downCount.js"></script>
+
+<script type="text/javascript">
+	jQuery(function () {
+		jQuery(window).scroll(function () {
+			if (jQuery(this).scrollTop() > 60) {
+				$("#menu").css({'background-color':'rgba(5, 40, 59, 0.9)', 'transition':'background 0.4s'});
+			} else {
+				$("#menu").css('background-color', 'transparent');
+			}
+		});
+	});
+</script>
+
+<link rel="icon" href="images/icone.png"/>
+</head>
+<body>
+	<!--início header-->
+	<section class="banner-header container-fluid" id="home">
+		<div class="header">
+			<nav class="navbar navbar-default navbar-fixed-top" id="menu">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="fa fa-bars"></span>
+						Menu
+					</button>
+				</div>
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="link-effect-2" style="height: auto;" id="link-effect-2">
+						<ul class="nav navbar-nav">
+							<li><a href="#">Home</a></li>
+							<li><a href="#about" class="scroll">Sobre</a></li>
+							<li><a href="#about2" class="scroll">Agenda</a></li>
+							<li><a href="ultima_jornada.html">Última Jornada</a></li>
+							<li><a href="#professor" class="scroll">Palestrantes</a></li>
+							<li><a href="#service2" class="scroll">Contato</a></li>
+							<li class="active"><a href="#" data-toggle="modal" data-target="#exampleModal" class="scroll">Inscreva-se</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>		
+		<!--//Fim header-->
+		<!-- Início banner -->
+		<div id="banner" class="container">
+			<div class="row" id="logo">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+					<img src="images/final_horizontal_logo-jornada-artes.png" class="img-responsive" alt="">
+				</div>
+			</div>
+			<div class="text-center">
+				<h3 class="espaco-h3"><span class="fa fa-map-marker texto-amarelo"></span> IFSULDEMINAS Campus Machado</h3>
+				<h3 class="espaco-h3"><span class="fa fa-calendar-check-o texto-amarelo"></span> 21 - 23 Maio 2019</h3>
+				<a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-default btn-grande scroll">INSCREVA-SE</a>
+				<p class="text-white" style="font-size: 20px;">Incrições a partir de 14/05</p>
+			</div>
+		</div>
+		<!-- Fim banner -->
+	</section>
+	
+	<!-- Início sobre -->
+	<section id="about" class="container">
+		<article class="row">
+			<div id="about" class="about all_pad w3ls">
+				<div class="container">
+					<h3 class="w3-about-title texto-azul-claro d" style="padding-top: 12px;">Sobre a Jornada</h3>
+					<div class="ser-top-grids">
+						<div class="col-md-4 ser-grid wow flipInY" data-wow-duration="1.5s" data-wow-delay="0s">
+							<div class="con-left text-center">
+								<div class="spa-ico"><span><i class="fa fa-book" aria-hidden="true"></i></span></div>
+								<h5 class="texto-roxo">O Evento</h5>
+								<p>Contaremos com a presença de diversos profissionais do mercado e também do setor acadêmico. As atividades também serão abertas à comunidade externa.</p>			
+							</div>
+						</div>
+						<div class="col-md-4 ser-grid wow flipInY" data-wow-duration="1.5s" data-wow-delay="0s">
+							<div class="con-left text-center">
+								<div class="spa-ico"><span><i class="fa fa-pencil" aria-hidden="true"></i></span></div>
+								<h5>Conteúdo</h5>
+								<p>O evento contará com palestras, minicursos, oficinas diversas voltadas para as áreas de Computação e Educação, todas gratuitas para os participantes.</p>	
+							</div>
+						</div>
+						<div class="col-md-4 ser-grid wow flipInY" data-wow-duration="1.5s" data-wow-delay="0s">
+							<div class="con-left text-center" style="margin-bottom: 30px !important">
+								<div class="spa-ico"><span><i class="fa fa-check" aria-hidden="true"></i></span></div>
+								<h5>Objetivo</h5>
+								<p>O principal objetivo é complementar a formação dos participantes, possibilitando a aquisição de novos conhecimentos nas áreas da computação e mercado de trabalho.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 embed-responsive embed-responsive-16by9" style="margin: 0 auto;">
+							<iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/GXoOhNTRqZU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<!-- Fim Sobre -->
+
+	<!-- Início contador -->
+	<div class="services" id="services">
+		<div class="w3-services-head">
+			<h3 class="w3-about-title d" style="padding-top: 12px;">Estamos quase lá...</h3>
+			<h3 class="text-center" style="color: #fff; margin-bottom: 50px; font-size: 22px;">De 21 a 23 de Maio</h3>
+		</div>
+		<div class="container">
+			<section class="countdown row">
+				<div class="col-md-3"><span class="days" style="color: #fff;">00</span><p class="days_ref">Dias</p></div>
+				<div class="col-md-3"><span class="hours" style="color: #fff;">00</span><p class="hours_ref">Horas</p></div>
+				<div class="col-md-3"><span class="minutes" style="color: #fff;">00</span><p class="minutes_ref">Minutos</p></div>
+				<div class="col-md-3"><span class="seconds" style="color: #fff;">00</span><p class="seconds_ref">Segundos</p></div>
+			</section>
+
+			<script>
+				$('.countdown').downCount({
+					date: '05/21/2019 07:00:00',
+				});
+			</script>
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!-- Fim contador -->
+
+<!-- Início agenda -->
+
+<section id="about2" class="container">
+	<article class="row">
+		<div id="about" class="about all_pad w3ls">
+
+			<h3 class="w3-about-title texto-azul-claro d" style="padding-top: 12px;">Agenda</h3>
+			<div class="container">
+				<ul class="nav nav-pills row he" id="pills-tab" role="tablist">
+					<li class="nav-item col-md-3">
+						<a class="nav-link botao active bot2" onclick="adicionabg()" id="pills-home-tab" style="padding-left: 53px; padding-right: 53px;" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">21/05/2019</a>
+					</li>
+					<li class="nav-item col-md-3">
+						<a class="nav-link botao" style="padding-left: 17px; padding-right: 17px;" onclick="adicionabg()" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">22/05/2019 <img style="width: 12%;" src="images/computer.png"></a>
+					</li>
+					<li class="nav-item col-md-3">
+						<a class="nav-link botao bot2" style="padding-left: 53px; padding-right: 53px;" onclick="adicionabg()" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">23/05/2019</a>
+					</li>
+				</ul>
+			</div>	
+			
+			<!-- Dia 21/05 -->
+			<div class="tab-content row" id="pills-tabContent">
+				<div class="tab-pane text-center fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+					<div class="text-center palest font-weight-bold">
+						Palestras
+					</div>
+					<div class="col-md-4 cartao-palestra m5">
+						<h4 class="font-weight-bold">Título:</h4>
+						<h4>Desenvolvimento de Software</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Palestrante:</h4>
+						<h4>Matheus Haddad</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Horário:</h4>
+						<h4>07:30 - 08:45</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Local:</h4>
+						<h4>Auditório</h4>
+					</div>
+
+					<div class="col-md-4 cartao-palestra">
+						<h4 class="font-weight-bold">Título:</h4>
+						<h4>Informática aplicada a agropecuária e Inovação Tecnológica</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Palestrante:</h4>
+						<h4>Leandro Paiva</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Horário:</h4>
+						<h4>09:30 - 10:45</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Local:</h4>
+						<h4>Auditório</h4>
+					</div>
+
+					<div class="col-md-4 cartao-palestra m5">
+						<h4 class="font-weight-bold">Título:</h4>
+						<h4>Apresentação PIBID</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Organizador:</h4>
+						<h4>Renato Magalhães</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Horário:</h4>
+						<h4>19:00 - 20:00</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Local:</h4>
+						<h4>Auditório</h4>
+					</div>
+
+					<div class="col-md-4 cartao-palestra">
+						<h4 class="font-weight-bold">Título:</h4>
+						<h4>Gestão de Software com Práticas Ágeis: caso DEVTI - IFSULDEMINAS</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Palestrante:</h4>
+						<h4>Leonardo Ciscon</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Horário:</h4>
+						<h4>20:00 - 21:30</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Local:</h4>
+						<h4>Auditório</h4>
+					</div>
+				</div>
+				<!-- Fim Dia 21/05 -->
+
+				<!-- Dia 22/05 -->
+				<div class="tab-pane text-center fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+					<div class="text-center palest font-weight-bold">
+						Palestras
+					</div>
+					<div class="col-md-3 cartao-palestra m4">
+						<h4 class="font-weight-bold">Título:</h4>
+						<h4>Social Media e design de conversão</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Palestrante:</h4>
+						<h4>Edison Rezende</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Horário:</h4>
+						<h4>07:30 - 08:45</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Local:</h4>
+						<h4>Auditório</h4>
+					</div>
+
+					<div class="col-md-3 cartao-palestra">
+						<h4 class="font-weight-bold">Título:</h4>
+						<h4>Pitch - Intercâmbio</h4>
+						
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Palestrante:</h4>
+						<h4>Jéssica Venâncio</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Horário:</h4>
+						<h4>08:45 - 09:15</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Local:</h4>
+						<h4>Auditório</h4>
+					</div>
+
+					<div class="col-md-3 cartao-palestra">
+						<h4 class="font-weight-bold">Título:</h4>
+						<h4>Internet das Coisas: fundamentos e aplicações</h4>
+						
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Palestrante:</h4>
+						<h4>Vinicius Souza</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Horário:</h4>
+						<h4>09:30 - 10:45</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Local:</h4>
+						<h4>Auditório</h4>
+					</div>
+					<div class="text-center palest font-weight-bold" style="clear: both;">Torneios</div>
+					<div class="col-md-5 m3 cartao-minietorneio">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Torneio de Games<br>LOL</h4>
+						
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Professor Alexandre</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 5</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">13:00 - 17:00</h4>
+					</div>
+
+					<div class="col-md-5 cartao-minietorneio">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Torneio<br> de Programação</h4>
+						
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Professor Angelo</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 2</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">13:00 - 17:00</h4>
+					</div>
+					<div class="text-center palest font-weight-bold" style="clear: both;">Minicursos</div>
+					<div class="col-md-2 m4 cartao-minietorneio">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Adobe Ilustrator</h4>
+						
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Cristian Luiz</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 1</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">19:00 - 23:00</h4>
+						
+					</div>
+					<div class="col-md-2 cartao-minietorneio">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Robótica com Lego Mindstorms</h4>
+						
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Marcelo Luz</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 2</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">19:00 - 23:00</h4>
+						
+					</div>
+					<div class="col-md-2 cartao-minietorneio">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Google Forms e Classroom: possibilidades pedagógicas</h4>
+						
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Professora Cristina</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 3</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">19:00 - 23:00</h4>
+						
+					</div>
+					<div class="col-md-2 m4 cartao-minietorneio">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Mikrotik Network Associate</h4>
+						
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Marcelo Santos</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 4</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">19:00 - 23:00</h4>
+						
+					</div>
+					<div class="col-md-2 cartao-minietorneio">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Arduino com Jogos</h4>
+						
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Renan Martins</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório Robótica</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">19:00 - 23:00</h4>
+					</div>
+				</div>
+				<!-- Fim Dia 22/05 -->
+
+
+				<!-- Dia 23/05 -->
+				<div class="tab-pane text-center fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+					<div class="text-center palest font-weight-bold" style="clear: both;">
+						Minicursos
+					</div>
+					<div class="col-md-2 cartao-palestra e2">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Photoshop<br> descomplicado</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Júlio Gurgel</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 1</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">07:00 - 11:00</h4>
+
+					</div>
+					<div class="col-md-2 cartao-palestra">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Adobe XD</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">João Vitor</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 4</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">07:00 - 11:00</h4>
+
+					</div>
+					<div class="col-md-2 cartao-palestra">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Introdução a Aprendizagem de Máquina com Python</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Gabriel Avelar / Nykollas</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 5</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">07:00 - 11:00</h4>
+
+					</div>
+					<div class="col-md-2 cartao-palestra">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Impressão 3D</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Diego Russo</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório Robótica</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">07:00 - 11:00</h4>
+
+					</div>
+					<div class="col-md-3 cartao-palestra e3">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Desenvolvimento de um CRUD com PHP e MySQL</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Luiz Felipe Gatto / Yani Oliveira</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 1</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">13:00 - 17:00</h4>
+
+					</div>
+					<div class="col-md-3 cartao-palestra">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Lego Mindstorms Core Set EV3</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Marcelo Luz</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 2</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">13:00 - 17:00</h4>
+
+					</div>
+					<div class="col-md-3 cartao-palestra">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Git e Github: primeiros passos</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Pedro Martins / Gabrielly de Lima</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 4</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">13:00 - 17:00</h4>
+
+					</div>
+					<div class="col-md-3 cartao-palestra e3">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">"Como? 32% é igual a 35%??? Entendendo o estatisticamente empatados"</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Kátia Alves</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório 5</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">13:00 - 17:00</h4>
+
+					</div>
+					<div class="col-md-3 cartao-palestra">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Automação com Arduino</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Dionatan Santos</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Laboratório Robótica</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">13:00 - 17:00</h4>
+
+					</div>
+					<div class="col-md-3 cartao-palestra">
+						<h4 class="font-weight-bold" style="padding-bottom: 10px; border-bottom: 2px solid #808080;">Manutenção de computadores na prática</h4>
+
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Yuri Rabello</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">Espaço Maker</h4>
+						<h4 class="font-weight-bold" style="margin-top: 10px;">13:00 - 17:00</h4>
+
+					</div>
+				</div>
+				<!-- Fim Dia 23/05 -->
+			</div>
+			<script>
+				function adicionabg() {
+					$("#pills-tabContent").addClass("bck");
+				}
+			</script>
+		</div>
+		<div class="clearfix"></div>
+		
+	</div>
+</article>
+</section>
+
+<!-- Fim agenda -->
+
+<!-- start inscrição -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Inscrição</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+      	 <h3 style="margin: 10px;">Faça sua inscrição:</h3>
+         <a type="button" href="https://www.sympla.com.br/vi-jornada-da-computacao-e-educacao__530005" class="btn btn-warning" target="_blank">Palestras</a>
+        <a type="button" target="_blank" href="https://info.mch.ifsuldeminas.edu.br/ifeventos" class="btn btn-success">Minicursos</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fim inscrição -->
+
+<!-- Start eu fiz -->
+<!-- Início vai passar por aqui -->
+<div class="jarallax team" id="professor">
+	<div class="team-dot">
+		<div class="container">
+			<div class="w3-agile-heading  texto-azul-claro">
+				<h3 class="w3-about-title d" style="padding-top: 12px; color: #fff;">Palestrantes</h3>
+			</div>
+			<div class="agileits-team-grids">
+				<div class="col-md-3 agileits-team-grid">
+					<div class="team-info team-legenda team-legenda-leandro_paiva">
+						<img src="images/leandrofoto.png" class="img-responsive">
+					</div>
+					<div class="team-caption tea"> 
+						<h4>Leandro Carlos Paiva</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid">
+					<div class="team-info team-legenda team-legenda-leonardo_aparecido">
+						<img src="images/leonardo(1).jpeg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Leonardo Ciscon</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid">
+					<div class="team-info team-legenda team-legenda-jessica_venancio">
+						<img src="images/jessica.jpg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Jéssica Venancio</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid">
+					<div class="team-info team-legenda team-legenda-vinicius_ferreira">
+						<img src="images/Vinícius3(1).jpg" alt="">
+					</div>
+					<div class="team-caption" style="margin-bottom: 10px;"> 
+						<h4>Vinícius Ferreira</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-edison">
+						<img src="images/edisonpb.png" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Edison Rezende</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-matheus_had">
+						<img src="images/matheus-haddad.jpg" class="img-responsive">
+					</div>
+					<div class="team-caption" style="margin-bottom: 20px;"> 
+						<h4>Matheus Haddad</h4>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<h3 class="w3-about-title d2" style=" color: #fff;">Ministrantes</h3>
+
+				<div class="col-md-3 agileits-team-grid">
+					<div class="team-info team-legenda team-legenda-luiz_felipe">
+						<img src="images/LuizFelipe(1).JPG" class="img-responsive">
+					</div>
+					<div class="team-caption tea"> 
+						<h4>Luiz Felipe Gatto S.L</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid">
+					<div class="team-info team-legenda team-legenda-yani_oliveira">
+						<img src="images/Yani.jpg" class="img-responsive">
+					</div>
+					<div class="team-caption"> 
+						<h4>Yani O. Vilas Boas</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid">
+					<div class="team-info team-legenda team-legenda-joao_vitor">
+						<img src="images/joaovitor.jpeg" class="img-responsive">
+					</div>
+					<div class="team-caption"> 
+						<h4>João Vitor O. Araujo</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid">
+					<div class="team-info team-legenda team-legenda-pedro_henrique">
+						<img src="images/pedrohenrique(1).jpg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Pedro Henrique M.</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-gabrielly_lima">
+						<img src="images/gabrielly.jpg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Gabrielly de Lima</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-julio_gurgel">
+						<img src="images/julio.jpg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Júlio Gurgel</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-cristina">
+						<img src="images/cris_perfil.jpg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Cristina Carvalho</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-matheus_alisson">
+						<img src="images/matheusAlisson.jpg" alt="">
+					</div>
+					<div class="team-caption tea"> 
+						<h4>Matheus Alisson</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda 	team-legenda-renan_martins">
+						<img src="images/renan_martins.jpg" alt="">
+					</div>
+					<div class="team-caption tea"> 
+						<h4>Renan Martins</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-cristian_luiz">
+						<img src="images/cristian.jpg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Cristian Luiz</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-matheus_franco">
+						<img src="images/matheus(1).jpg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Matheus Franco</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-marcelo">
+						<img src="images/marcelo.jpg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Marcelo Santos</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-katia">
+						<img src="images/katia.png" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Kátia Alves</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-diego">
+						<img src="images/DiegoRusso.jpeg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Diego Russo</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-carine">
+						<img src="images/carine.jpg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Carine Silveira</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-itamar">
+						<img src="images/itamar.jpg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Itamar Costa</h4>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-m-luz">
+						<img src="images/marceloLuz.jpg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Marcelo Felipe da Luz</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-ga">
+						<img src="images/gabriel.jpg" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Gabriel Avelar</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agileits-team-grid mat">
+					<div class="team-info team-legenda team-legenda-dionatan">
+						<img src="images/dionatan.png" alt="">
+					</div>
+					<div class="team-caption"> 
+						<h4>Dionatan Santos</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Fim quem vai passar por aqui -->
+
+
+<!-- Início contato -->
+<div id="service2" class="services2">
+	<div class="w3-services-head">
+		<h3 class="w3-about-title d" style="padding-top: 12px; color: #2c6580; font-weight: bold;">Entre em Contato</h3>
+	</div>
+	<section class="container">
+		<div class="col-md-6 mx-auto">
+			<h3 class="cp">Mande-nos um e-mail:</h3>
+			<form action="email/mensagem_envia.php" method="POST">
+				<p class="p">Nome: </p>
+				<input type="text" required name="nome" class="form-control" placeholder="digite seu nome...">
+				<p class="p">Assunto: </p>
+				<input type="text" required name="assunto" class="form-control" placeholder="digite o assunto...">
+				<p class="p">E-mail:</p>
+				<input type="email" required name="email" class="form-control" placeholder="digite seu email...">
+				<p class="p">Mensagem: </p>
+				<textarea id="" name="mensage" required cols="30" rows="10" style="resize: none;" class="form-control" placeholder="digite sua mensagem..."></textarea>
+				<div class="text-center" style="margin-top: 7px;">
+					<input type="reset" class="btn btn-lg" value="Limpar">
+					<input type="submit" class="btn btn-lg btn-success" value="Enviar">
+				</div>
+			</form>
+		</div>
+		
+		<div id="contatoRedeSocial" class="col-md-6" style="margin-top: 10px;">
+			<h3 class="cp">Ou entre em contato pelas redes sociais:</h3>
+			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Finformaticaifmachado%2F&tabs=timeline&width=300&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			
+			<div id="contatoInstagram">
+				<a href="https://www.instagram.com/dc_ifmachado/" target="_blank"><img src="images/iconInsta.png" class="instaContato"></a>
+			</div>	
+		</div>
+	</section>
+	<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+<!-- Start Patrocinadores -->
+
+<div class="con-left-home text-center" id="patrocinadores-uj" data-wow-duration="1.5s" data-wow-delay="0s">
+	<h5 class="w3-about-title texto-azul-claro d" style="padding-top: 30px;">Patrocinadores</h5>
+	
+	<div class="col-md-5 col-sm-6 r">
+		<a href="http://o2telecom.com.br/" target="_blank"><img src="images/o2.jpg" class="img-responsive"></a>
+	</div>
+	<div class="col-md-5 col-sm-6" style="margin-top: 20px;">
+		<a href="https://www.datascienceacademy.com.br/pages/home" target="_blank"><img src="images/datascience.png" class="img-responsive"></a>
+	</div>
+
+	<div class="col-md-3 col-sm-6 r3" style="margin-top: 20px;">
+		<a href="http://www.marineinnhotel.com.br/" target="_blank"><img src="images/marine.jpg" class="img-responsive"></a>
+	</div>
+	
+	<div class="clearfix"></div>	
+</div>
+
+<!-- Fim Patrocinadores -->
+<!-- Start Apoio -->
+<div id="apoio" class="container text-center" style="margin-bottom: 20px;" id="patrocinadores-uj" data-wow-duration="1.5s" data-wow-delay="0s">
+	<h5 class="w3-about-title texto-azul-claro d" style="padding-top: 30px;">Apoio</h5>
+
+	<div class="col-md-3 col-sm-4 r2">
+		<a href="http://www.fadema.org.br/" target="_blank"><img src="images/fadema.jpg" class="img-responsive" style="border-radius: 20px;"></a>
+	</div>
+	<div class="col-md-3 col-sm-4 r r2" style="margin-top: 20px;">
+		<a href="https://www.instagram.com/coetagri/" target="_blank"><img src="images/coetagri.png" class="img-responsive"></a>
+	</div>
+	<div class="col-md-3 col-sm-4 r r2" style="margin-top: 20px;">
+		<a href="https://estacaocultura.net.br/" target="_blank"><img src="images/estacao.png" class="img-responsive"></a>
+	</div>
+	
+	<div class="clearfix"></div>	
+</div>
+<!-- Fim apoio -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.07437332217!2d-45.892852885429654!3d-21.699836201370942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca6b310a64f323%3A0x9ecc3a078d5481f5!2sIFSULDEMINAS+-+Campus+Machado!5e0!3m2!1spt-BR!2sbr!4v1551108284778" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<!-- Fim contato -->
+
+<!-- Início mapa/rodapé -->
+<div class="footer">
+	<div class="container">
+		<div class="footer-grids-all">
+			<div class="footer-w3-grid-top">
+				<div class="col-md-12  text-center w3layouts_footer_grid">
+					<h3>IFSULDEMINAS - Campus Machado</h3>
+					<ul>
+						<li><i class="glyphicon glyphicon-send"></i> Rod. Machado - Paraguaçu, <br> Bairro Santo Antonio, <span> <br> Machado - MG, 37750-000. </span></li>
+						<li><i class="fa fa-phone" style="color: #fdbf00;" aria-hidden="true"></i><span style="color: #fff;"> (35) 3295-9700 </span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom-agile">
+				<p>© 2019. Todos os direitos reservados | Desenvolvido por <a href="https://sites.google.com/view/gapepixel" target="_blank"><img src="images/logo_Gape.png" class="pixelLogo"></a></p>
+			</div>
+		</div>
+	</div>
+	<!-- Fim rodapé -->
+
+	<!-- modal video -->
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" data-backdrop="static">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" id="fecharVideo" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> Fechar vídeo</button>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="meuVideo" class="embed-responsive-item"  src="https://www.youtube.com/embed/GXoOhNTRqZU?rel=0&modestbranding=1&fs=0&controls=0&autoplay=1&showinfo=1&version=3&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$('#modal').modal('show');
+	</script>
+
+	<script>
+		$('#fecharVideo').click(function() {
+			$('#meuVideo').each(function(){ 
+				var frame = document.getElementById("meuVideo");
+				frame.contentWindow.postMessage(
+					'{"event":"command","func":"pauseVideo","args":""}',
+					'*'); 
+			});
+		});
+	</script>
+	<!-- fim modal video -->
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->  
+</body>
+</html>

@@ -1,0 +1,53 @@
+.countdown{
+    text-align: center;
+}
+
+.countdown div{
+    border: 2px solid #fff;
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px 20px;
+}
+
+.countdown div span {
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 80px;
+}
+.countdown div p {
+    color: #fff;
+    font-size: 30px;
+}
+/*div.countdown {
+    list-style: none;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+div.countdown div {
+    display: inline-block;
+    border: 2px solid #fff;
+    background-color: rgba(0,0,0,0.5)
+}
+
+div.countdown div.clockleft{
+    margin-left: 15px;
+}
+
+div.countdown div span {
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 80px;
+}
+
+div.countdown div.seperator {
+    font-size: 80px;
+    line-height: 70px;
+    vertical-align: top;
+}
+
+div.countdown div p {
+    color: #fff;
+    font-size: 30px;
+}
+*/
