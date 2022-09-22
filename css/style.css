@@ -157,6 +157,8 @@ ul li a.botao:hover{
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
+    width: 290px;
+    height: 230px;
 }
 
 .cartao-minietorneio{
@@ -1603,6 +1605,7 @@ div#interface-mensagem_envia h3{
     }
    .cartao-minietorneio{
         width: 290px;
+        height: 180px;
     }
     .r{
         margin-left: 80px;
