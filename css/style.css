@@ -161,6 +161,7 @@ ul li a.botao:hover{
 }
 
 .cartao-minietorneio{
+    height: 200px;
     background-color: #fff;
     border-radius: 10px;
     margin: 10px;
@@ -263,6 +264,12 @@ ul ,ol {
 img {
 	width:100%;
 	height:100%;
+}
+
+.img-patrocinio {
+    width: 300px;
+    height: auto;
+    justify-content: center;
 }
 /*--header--*/
 /*-- banner --*/
@@ -1654,6 +1661,17 @@ div#interface-mensagem_envia h3{
         width: 10%;
     }
 }
+
+@media(min-width:1025px){
+    nav.navbar.navbar-default {
+        padding: 1.92em 0;
+    }
+
+    .pixelLogo{
+        width: 10%;
+    }
+}
+
 @media(max-width:1440px){
 	.header {
     left: 8%;
@@ -1741,7 +1759,7 @@ div#interface-mensagem_envia h3{
     }
 
      .pixelLogo{
-        width: 30%;
+        width: 10%;
         padding-top: 10px;
     }
 
