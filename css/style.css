@@ -2757,4 +2757,110 @@ div#interface-mensagem_envia h3{
   filter: alpha(opacity=86);
   opacity: .86;
 }
+
+.card {
+ position: relative;
+ width: 350px;
+ height: 190px;
+ background: #fff;
+ transition: 0.5s;
+ border-radius: 5px;
+}
+
+.card:hover {
+    height: 450px;
+}
+
+.card .lines {
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.card .lines::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 100px;
+    background-color: #fdbf00;
+    animation: animate 4s linear infinite;
+}
+
+.card .lines::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: rgb(255, 255, 255);
+}
+
+.card .imgBx {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.card:hover .imgBx {
+    width: 250px;
+    height: 250px;
+}
+
+.card .imgBx::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 100px;
+    transform: translateX(-50%, -50%);
+    background: #05283b;
+    animation: animate2 2s linear infinite;
+}
+
+.card .imgBx::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.card .imgBx img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    /* filter: grayscale(1); */
+    border-radius: 50%;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    } 100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    } 100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 /*-- /responsive design --
